@@ -1,0 +1,381 @@
+h1 {
+    font-family: "Lobster";
+    font-size: 60px;
+}
+
+h2 {
+    font-family: "Acme";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3, h4, h5, p, a {
+    font-family: "EB Garamond";
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.space {
+    padding-top: 60px;
+}
+
+/* NAVBAR */
+nav #navbar {
+    background-color: transparent;
+    position: fixed;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    top: 0;
+    transition-duration: 0.3s top;
+    z-index: 2;;
+}
+
+nav .navbar-brand {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+nav .navlink{
+    padding: 5px 15px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav .offcanvas .navlink:hover {
+    border-bottom:2px solid black;
+    transition: 0.3s ease;
+}
+
+nav .offcanvas {
+    width: 250px;
+}
+
+nav .collapse a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+}
+
+nav .collapse a:hover::after {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+/* HEADER */
+header {
+    background: url("../Image/Header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+header h2 {
+    font-family: "Lobster";
+    font-weight: normal;
+}
+
+header .container {
+    padding: 100px 0;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+}
+
+header .middle {
+    padding-top: 20%;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+header h2 {
+    font-size: 40px;
+}
+
+header button.btn {
+    border: 2px solid #900000;
+    padding: 5px 20px;
+    box-shadow: inset 0 0 0 0 transparent;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-bottom: 110px;
+}
+
+header button a {
+    color: #900000;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+header button.btn:hover  {
+    /* background: linear-gradient(to right,#FAD9D2, white); */
+    border: none;
+    box-shadow: inset 200px 0 0 0 #FAD9D2;
+}
+
+header button.btn a:hover {
+    color: darkred;
+}
+
+header button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+header button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+}
+  
+header button:hover span {
+    padding-right: 25px;
+}
+
+header button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ABOUT */
+.about {
+    background: #FAD9D2;
+    padding: 100px 0;
+    border-bottom: 2px solid lightgoldenrodyellow;
+    border-top: 2px solid lightgoldenrodyellow;
+    padding-top: 0;
+}
+
+.about span {
+    color: #900000;
+    font-size: 24px;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 36px;
+}
+
+.about div.circle {
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 0 5px 0 5px rgb(252, 219, 245);
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* FOOD */
+.food {
+    background: #F7F7F7;
+    padding: 100px 0;
+    border-bottom: 2px solid lightgoldenrodyellow;
+}
+
+.food span {
+    font-size: 21px;
+    color: #900000;
+}
+
+.food .row {
+    margin: 10px 0;
+}
+
+.food p {
+    font-size: 16px;
+}
+
+#topspace {
+    margin-top: 100px;
+}
+
+#topspace1 {
+    margin-top: 200px;
+}
+
+.food .border1 {
+    margin: 5px 0;
+    background: linear-gradient(to bottom, rgba(252, 226, 234, 0.788), white);
+    border: 2px dotted #FEB09C;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.food .border1:hover {
+    background-color: #FEB09C;
+}
+
+/* PLACES */
+.places {
+    background: #FEEFEA;
+    padding: 100px 0;
+    border-bottom: 2px solid lightgoldenrodyellow;
+}
+
+.places span {
+    font-size: 24px;
+    color: #900000;
+}
+ 
+.places img {
+    border-radius: 100px;
+}
+
+/* CULTURE */
+.culture {
+    background: #FAD9D2;
+    padding: 100px 0;
+    border-bottom: 2px solid lightgoldenrodyellow;
+}
+
+.culture ul {
+    padding-left: 0;
+    padding-right: 0;
+    list-style: none;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.culture ul li {
+    position: relative;
+    max-width: 250px;
+    min-width: 230px;
+}
+
+.culture ul li img {
+    width: 100%;
+}
+
+@media(max-width: 2400px) {
+    .culture ul {
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+}
+
+.culture li {
+    position: relative;
+    float: left;
+}
+
+.culture li div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.culture li div span {
+    position: inherit;
+    top: 50%;
+    left: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+.culture li:hover {
+    cursor: pointer;
+}
+
+.culture li:hover div {
+    visibility: visible;
+    opacity: 0.8;
+    padding: 3px 5px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.culture span {
+    color: #900000;
+    font-size: 24px;
+}
+
+/* FACTS */
+.facts {
+    background: #F7F7F7;
+    padding: 100px 0;
+    border-bottom: 2px solid lightgoldenrodyellow;
+}
+
+.facts .border2 {
+    border: 1px dashed #FEB09C;
+    border-radius: 2px;
+}
+
+.facts .border2:hover {
+    background: linear-gradient(to bottom right, #feb09c85, #F7F7F7);
+}
+
+.facts span {
+    color: #900000;
+    font-size: 24px;
+}
+
+/* FOOTER */
+footer {
+    background: #F0EBE8;
+}
+
+footer div a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer div i {
+    font-size: 1.5rem;
+    padding: 5px;
+} 
+
+/* Own media */
+@media(max-width: 992px) {
+    #vertical {
+        flex-direction: column;
+    }
+    #topspace {
+        margin-top: 0;
+    }
+    #topspace1 {
+        margin-top: 0;
+    }
+}

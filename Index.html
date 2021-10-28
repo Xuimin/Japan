@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" type="text/css" href="Asset/Css/Style.css">
+
+    <!-- Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <title>Japan</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid" id="navbar">
+
+            <a class="navbar-brand" href="#">Japan</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ms-auto me-auto">
+                    <a class="navlink" href="#home">Home</a>
+                    <a class="navlink" href="#about">About</a>
+                    <a class="navlink" href="#food">Food</a>
+                    <a class="navlink" href="#places">Attractions</a>
+                    <a class="navlink" href="#culture">Culture</a>
+                    <a class="navlink" href="#facts">Interesting Facts</a>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-start mx-0 w-10" tabindex="-1" id="menu">
+                <div class="navbar-nav">
+                    <a class="navlink" href="#home">Home</a>
+                    <a class="navlink" href="#about">About</a>
+                    <a class="navlink" href="#food">Food</a>
+                    <a class="navlink" href="#places">Attractions</a>
+                    <a class="navlink" href="#culture">Culture</a>
+                    <a class="navlink" href="#facts">Interesting Facts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="position-relative" id="home">
+        <div class="overlay">
+            <p style="font-size: 70px;" class="text-center py-5 my-5 col-sm d-none d-lg-block">
+                こんにちは <br />
+                友人元気ですか
+            </p>
+            <br />
+        </div>
+        <div class="text-center">
+            <div class="container position-relative">
+
+                <div class="middle py-auto text-center">
+                    <h1>Welcome</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2000">Let's go on a trip to Japan</h2>
+                    <button class="btn"><a href="#about"><span>Move on </span></a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="space text-center">ABOUT JAPAN</h2>
+            <div id="slidescreen" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slidescreen" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#slidescreen" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#slidescreen" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#slidescreen" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#slidescreen" data-bs-slide-to="4"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="Asset/Image/Carousel/Tokyo1.jpg" class="d-block w-100 img-fluid"
+                            style="height: 600px;">
+                        <div class="carousel-caption">
+                            <h5>Tokyo</h5>
+                            <p>
+                                Tokyo is Japan's capital and largest city located at the head of Tokyo Bay. It mixes the
+                                traditional and modern from skyscrapers and museums. As the most modern, most varied
+                                city in Japan, Tokyo offers a mix of old and new like nowhere else.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="Asset/Image/Carousel/Osaka1.jpg" class="d-block w-100 img-fluid"
+                            style="height: 600px;">
+                        <div class="carousel-caption">
+                            <h5>Osaka</h5>
+                            <p>
+                                Osaka is Japan's second largest and it is a great place to experience a large, modern
+                                city known for their nightlife, street foods and Osaka Castle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="Asset/Image/Carousel/Hiroshima1.jpg" class="d-block w-100 img-fluid"
+                            style="height: 600px;">
+                        <div class="carousel-caption">
+                            <h5>Hiroshima</h5>
+                            <p>
+                                Hiroshima is located in the southwest of Japan. It has a rich topography with the
+                                islands and the clear water. When the first atomic bomb was dropped over Hiroshima, the
+                                city became
+                                known worldwide for this unenviable distinction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="Asset/Image/Carousel/Kobe1.jpg" class="d-block w-100 img-fluid"
+                            style="height: 600px;">
+                        <div class="carousel-caption">
+                            <h5>Kobe</h5>
+                            <p>
+                                Kobe is the seventh-largest city in Japan and the capital city of Hyōgo Prefecture. It
+                                is known as a port city, Kobe's picture-perfect location between the sea and the Rokko
+                                mountains is its best feature.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="Asset/Image/Carousel/Kyoto1.jpg" class="d-block w-100 img-fluid"
+                            style="height: 600px;">
+                        <div class="carousel-caption">
+                            <h5>Kyoto</h5>
+                            <p>
+                                Kyoto is Japan’s ancient tradition. It is famous for its Buddhist temples, gardens and
+                                traditional wooden house. Kyoto never stops fascinating visitors with the extraordinary
+                                townscape with beautiful shrines and temples. It used to be an ancient capital of Japan
+                                until Tokyo took over.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slidescreen" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slidescreen" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 d-flex justify-content-center align-items-center" data-aos="slide-up"
+                    data-aos-duration="800">
+                    <div class="px-3">
+                        <p class="text-center">
+                            <span>Japan</span> is an island country in <span>East Asia</span> and is located in the
+                            Northwest Pacific Ocean. Japan is the eleventh-most populous country in the world. In
+                            Japanese, the name “Japan” is Nihon or Nippon, which means <span>“Land of the Rising
+                                Sun.”</span> It was once believed that Japan was the first country to see the sun rise
+                            in the East in the morning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="circle mx-3 text-center mx-auto">
+                        <img src="Asset/Image/Flag.png" class="img-fluid" style="width: 290px; height: 220px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="food" id="food">
+        <div class="container">
+            <h2 class="text-center">JAPANESE FOODS</h2>
+            <p class="text-center" style="font-size: 20px;">
+                Japanese food is one of the most popular cuisines in the world and for good reasons.
+                <br class="col-md d-none d-lg-block" />
+                Based on “rules of five,” traditional Japanese cooking emphasizes variety and balance.
+            </p>
+            <div class="row" data-aos="fade-in" data-aos-duration="1000">
+                <div class="d-flex justify-content-center align-items-center" id="vertical">
+                    <div class="col-lg-4 col-sm-8">
+                        <div class="mx-2 text-center justify-content-center align-items-center">
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-sushi.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>SUSHI</h4>
+                                <p>
+                                    <span>Sushi</span> is prepared vinegared rice, usually with some sugar and salt,
+                                    accompanying a variety of ingredients such as seafood, often raw, and vegetables.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-udon.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>UDON</h4>
+                                <p>
+                                    <span>Udon</span> is a thick noodle made from wheat flour. It is a comfort food for
+                                    many Japanese people.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-tempura.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>TEMPURA</h4>
+                                <p>
+                                    <span>Tempura</span> is a typical Japanese dish usually consisting of seafood, meat,
+                                    and vegetables that have been battered and deep fried.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-onigiri.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>ONIGIRI</h4>
+                                <p>
+                                    <span>Onigiri</span> is made from white rice formed into triangular or cylindrical
+                                    shapes and often wrapped in nori(seaweed).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-8" id="topspace">
+                        <div class="mx-2 text-center justify-content-center align-items-center">
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-ramen.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>RAMEN</h4>
+                                <p>
+                                    <span>Ramen</span> is basically known as "pulled noodles" is a Japanese noodle soup.
+                                    It consists of Chinese-style wheat noodles.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-donburi.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>DONBURI</h4>
+                                <p>
+                                    <span>Donburi</span> is known as "rice-bowl dish" consisting of fish, meat,
+                                    vegetables or other ingredients simmered together and served over rice.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-tamagoyaki.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>TAMAGOYAKI</h4>
+                                <p>
+                                    <span>Tamagoyaki</span> is a type of Japanese omelet, which is made by rolling
+                                    together several layers of fried egg.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-mochi.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>MOCHI</h4>
+                                <p>
+                                    <span>Mochi</span> is Japanese rice cake made of mochigome, a short-grain japonica
+                                    glutinous rice, and sometimes other ingredients. The rice is pounded into paste and
+                                    molded into the desired shape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-8" id="topspace1">
+                        <div class="mx-2 text-center justify-content-center align-items-center">
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-unagi.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>UNAGI</h4>
+                                <p>
+                                    <span>Unagi</span> is a hearty, nutritious meal loaded with vitamins and protein
+                                    that's very popular in Japan. Usually served with a sweet soy teriyaki sauce over
+                                    rice, the Japanese believe that eating eel during the hottest months helps fight
+                                    fatigue.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-miso-soup.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>MISO SOUP</h4>
+                                <p>
+                                    <span>Miso Soup</span> is made from a combination of miso paste. Tofu and seaweed
+                                    are usually added in it.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-okonomiyaki.png" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>OKONOMIYAKI</h4>
+                                <p>
+                                    <span>Okonomiyaki</span> is savory pancake made by mixing together batter and sliced
+                                    cabbage.
+                                </p>
+                            </div>
+                            <div class="border1">
+                                <img src="Asset/Image/Food/Food-chawanmushi.jpg" class="img-fluid"
+                                    style="width: 200px; height: 150px;">
+                                <h4>CHAWANMUSHI</h4>
+                                <p>
+                                    <span>Chawanmushi</span> is savory egg custard steamed in a tea bowl.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="places" id="places">
+        <div class="container text-center">
+            <h2 class="text-center">ATTRACTIONS</h2>
+            <p class="text-center mb-5">
+                There are many attractions to visit and places to see in Japan. Here are some...
+            </p>
+            <div class="row justify-content-center align-items-center my-4">
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="Asset/Image/Places/Places-hiroshima-peace-memorial.jpg" class="img-fluid"
+                            style="width: 400px; height: 250px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-duration="500">
+                    <h3>Hiroshima Peace Memorial</h3>
+                    <p>
+                        <span>Hiroshima Peace Memorial</span> is created in April 1, 1954 in Hiroshima. Originally, it
+                        is known as
+                        Hiroshima Prefectural Commercial Exhibition (HMI) for the purpose of arts and educational
+                        exhibition. After the atomic bomb was dropped in World War II, it is the only building left
+                        standing. Hence, it changed its name to Hiroshima Peace Memorial. The museum takes us back to
+                        World War II and reminds people that peace is what we need in this world. It also reminds people
+                        of the importance of human life as well as honors the victim so they will not be forgotten.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center my-4 flex-md-row-reverse">
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="Asset/Image/Places/Places-himeji-castle.jpg" class="img-fluid"
+                            style="width: 400px; height: 250px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-duration="500">
+                    <h3>Himeji Castle</h3>
+                    <p>
+                        The <span>Himeji Castle</span> is a hilltop Japanese castle complex situated in the city of
+                        Himeji which is
+                        located in the Hyōgo Prefecture of Japan. It is considered the best existing example of Japanese
+                        castle architecture. It was fortified to defend against enemies during the feudal period, but it
+                        has been rebuilt many times throughout the centuries and reflects the different design periods.
+                        It survived the bombings of World War II and is frequently seen in domestic and foreign films,
+                        including the James Bond movie “You Only Live Twice”.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center my-4">
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="Asset/Image/Places/Places-tokyo-tower.jpg" class="img-fluid"
+                            style="width: 400px; height: 250px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-duration="500">
+                    <h3>Tokyo Tower</h3>
+                    <p>
+                        The <span>Tokyo Tower</span> also known as “Japan Radio Tower” is a testament to the advancement
+                        of
+                        technology and modern life. It is inspired by the Eiffel tower design and is the second tallest
+                        man-made structure in Japan. It functions as a communications and observation tower. Visitors
+                        can climb the tower for unparalleled views of Tokyo and the surrounding areas as well as visit
+                        shops and restaurants.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center my-4 flex-md-row-reverse">
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="Asset/Image/Places/Places-imperial-palace.png" class="img-fluid"
+                            style="width: 400px; height: 250px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-duration="500">
+                    <h3>Tokyo Imperial Palace</h3>
+                    <p>
+                        <span>Tokyo Imperial Palace</span> is located in the center of Tokyo in the Chiyoda district. It
+                        stands out
+                        as a unique ancient architecture among the urban skyscrapers. The Palace is divided into the
+                        eastern part and the western part by the Kan-Moat and Hasuike Moat. The eastern part is called
+                        the Imperial Palace Eastern Garden and has been open to the public since 1968. In the western
+                        part are: the Fukiage Gyoen (Garden).
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="Asset/Image/Places/Places-mount-fuji.jpg" class="img-fluid"
+                            style="width: 400px; height: 250px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                    data-aos-duration="500">
+                    <h3>Mount Fuji</h3>
+                    <p>
+                        <span>Mount Fuji</span> is the highest mountain in Japan at 3,776 meters. It is the
+                        second-highest volcano
+                        located on an island in Asia (after Mount Kerinci on the island of Sumatra), and seventh-highest
+                        peak of an island on Earth. The volcano’s exceptionally symmetrical cone is a well-known symbol
+                        of Japan and it is frequently depicted in art and photographs, as well as a popular tourist
+                        attraction for sightseers and climbers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="culture" id="culture">
+        <div class="container">
+            <h2 class="text-center">Culture</h2>
+            <p class="text-center">
+                Here are some Japan's culture.
+            </p>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-xl-3 col-sm-8">
+                    <div class="text-center">
+                        <img src="Asset/Image/Culture/Culture-onsen.jpg" class="img-fluid"
+                            style="width: 200px; height: 200px; border-radius: 20px;">
+                        <h4>Onsen</h4>
+                        <p>
+                            <span>Onsen</span> are the country's hot springs bathing facilities and traditional inns
+                            around them. As
+                            a volcanically active country, Japan has thousands of onsens scattered throughout all of its
+                            major islands.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-8">
+                    <div class="text-center">
+                        <img src="Asset/Image/Culture/Culture-origami.jpg" class="img-fluid"
+                            style="width: 200px; height: 200px; border-radius: 20px;">
+                        <h4>Origami</h4>
+                        <p>
+                            <span>Origami</span> is originated in Japan. It is the art of folding paper, is often
+                            associated with
+                            Japanese culture. Origami aims to fold a plain sheet of paper into beautiful as well as
+                            interesting sculptures and intricate designs. Traditionally, origami has been practiced in
+                            Japan since the Edo period in the early 17th century.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-8">
+                    <div class="text-center">
+                        <img src="Asset/Image/Culture/Culture-kimono.png" class="img-fluid"
+                            style="width: 150px; height: 150px; border-radius: 20px;">
+                        <img src="Asset/Image/Culture/Culture-sakura.jpg" class="img-fluid"
+                            style="width: 150px; height: 150px; border-radius: 20px;">
+                        <h4>
+                            National flower: <span>Sakura</span> (Cherry Blossoms)<br />
+                            National garment: <span>Kimono</span>
+                        </h4>
+                        <p>
+                            The kimono is a T-shaped, wrapped-front garment with square sleeves and a rectangular body,
+                            and is worn left side wrapped over right.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <h4>Anime</h4>
+                <ul class="d-flex">
+                    <li>
+                        <img src="Asset/Image/Anime/Anime-my-neighbour-totoro.jpg" class="img-fluid"
+                            style="width: 200px; height: 300px;">
+                        <div style="font-size: 20px; font-family: 'EB Garamond';"> <span>My Neighbour
+                                <br />Totoro</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="Asset/Image/Anime/Anime-princess-mononoke.jpg" class="img-fluid"
+                            style="width: 200px; height: 300px;">
+                        <div style="font-size: 20px; font-family: 'EB Garamond';"> <span>Princess Mononoke</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="Asset/Image/Anime/Anime-spirited-away.jpg" class="img-fluid"
+                            style="width: 200px; height: 300px;">
+                        <div style="font-size: 20px; font-family: 'EB Garamond';"> <span>Spirited Away</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="Asset/Image/Anime/Anime-weathering-with-you.jpg" class="img-fluid"
+                            style="width: 200px; height: 300px;">
+                        <div style="font-size: 20px; font-family: 'EB Garamond';"> <span>Weathering With
+                                <br />You</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="Asset/Image/Anime/Anime-wolf-children.jpg" class="img-fluid"
+                            style="width: 200px; height: 300px;">
+                        <div style="font-size: 20px; font-family: 'EB Garamond';"> <span>Wolf Children</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="Asset/Image/Anime/Anime-your-name.jpg" class="img-fluid"
+                            style="width: 200px; height: 300px;">
+                        <div style="font-size: 20px; font-family: 'EB Garamond';"> <span>Your Name</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="facts" id="facts">
+        <div class="container">
+            <h2 class="text-center">INTERESTING FACTS</h2>
+            <p class="text-center">
+                Here are some you might not know about Japan.
+            </p>
+            <div data-aos="fade-up" data-aos-duration="500">
+                <div class="row justify-content-center align-items-center mb-5">
+                    <div class="col-md-5 text-center my-2">
+                        <div class="border2">
+                            <img src="Asset/Image/Facts/Facts-square-watermelon.jpg" class="img-fluid"
+                                style="height: 200px; width: 200px; border-radius: 100px;">
+                            <h4 style="color: darkred;">Square Watermelon</h4>
+                            <p>
+                                It was invented back in the ‘70s by a graphic designer for the purpose of easier to cut,
+                                stack as well as store.
+                                It is grown in containers. Since it is pretty expensive, people don’t buy them as food
+                                but
+                                rather as a decorative item.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 text-center my-2">
+                        <div class="border2">
+                            <img src="Asset/Image/Facts/Facts-slurp-noodles.jpg" class="img-fluid"
+                                style="height: 200px; width: 200px; border-radius: 100px;">
+                            <h4 style="color: darkred;">Slurp Noodles</h4>
+                            <p>
+                                It is appropriate to slurp noodles. It’s a way to give your compliments to the chef. In
+                                fact, you’re far more likely to be seen as rude if you don’t slurp your noodles, as it
+                                suggests that you’re not enjoying the food.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-5 text-center mb-2">
+                        <div class="border2">
+                            <img src="Asset/Image/Facts/Facts-bow.png" class="img-fluid"
+                                style="height: 200px; width: 200px; border-radius: 100px;">
+                            <h4 style="color: darkred;">Bowing</h4>
+                            <p>
+                                When Japanese people meet, they bow instead of shaking hands. Lowest bow shows deepest
+                                respect.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 text-center my-2">
+                        <div class="border2">
+                            <img src="Asset/Image/Facts/Facts-no-four.jpg" class="img-fluid"
+                                style="height: 200px; width: 200px; border-radius: 100px;">
+                            <h4 style="color: darkred;">No four</h4>
+                            <p>
+                                Japan avoid the number four (shi) because it sounds the same as the word death. Tall
+                                building does not have fourth floor. Some event even cannot have four people only.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 text-center my-2">
+                        <div class="border2">
+                            <img src="Asset/Image/Facts/Facts-vending-machine.jpg" class="img-fluid"
+                                style="height: 200px; width: 200px; border-radius: 100px;">
+                            <h4 style="color: darkred;">Vending Machines</h4>
+                            <p>
+                                There are over 5 million vending machines with one on almost every street corner. You
+                                can
+                                buy almost anything you want here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center mt-5" data-aos="zoom-in"
+                    data-aos-duration="1000">
+                    <div class="col-md-8 text-center mt-5">
+                        <h3>Did you know?</h3>
+                        <p>
+                            Japan is substantially prone to earthquakes, tsunami and volcanoes because of its location
+                            along
+                            the “Pacific Ring of Fire”. Japan has 111 active volcanoes. Destructive earthquakes, often
+                            resulting in tsunami, this occurs several times each century.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center col-sm-12">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#food">Food</a>
+            <a href="#places">Places</a>
+            <a href="#culture">Culture</a>
+            <a href="#facts">Interesting Facts</a>
+        </div>
+
+        <div class="mt-3">
+            <small>Ⓒ 2021 All Rights Reserved</small>
+        </div>
+    </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Animation AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Navbar scroll -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            return prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+
+</html>
